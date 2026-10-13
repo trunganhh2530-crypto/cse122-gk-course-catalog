@@ -30,7 +30,7 @@ Cho phép người dùng (khách chưa đăng nhập) **tra cứu chương trìn
 
 ## Link Figma
 
-> TODO: *(dán link Figma trang Course Catalog – thiết kế Desktop + Mobile sau khi hoàn thành)*
+https://www.figma.com/design/BaIlOa6PACas0eaH4sfcHA/Danh-m%E1%BB%A5c-h%E1%BB%8Dc-ph%E1%BA%A7n---Kh%C3%A1ch
 
 ## Link video
 
