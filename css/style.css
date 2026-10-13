@@ -1,1 +1,195 @@
-/* StudyPath AI — style dùng chung (WP3 sẽ bổ sung) */
+/* =========================================================
+   StudyPath AI — style riêng trang Danh mục học phần (Course Catalog – Khách)
+   Nạp sau base.css và responsive.css, chỉ chứa style đặc thù của trang.
+   ========================================================= */
+
+/* ===== Sidebar khách ===== */
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-cta {
+  margin-top: auto;
+  padding: var(--space-2);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ===== Topbar ===== */
+.topbar-title {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+/* ===== Thanh tìm kiếm và bộ lọc ===== */
+.filters-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: var(--space-2);
+  align-items: end;
+  margin-bottom: var(--space-3);
+}
+
+.filters-bar .form-group {
+  margin-bottom: 0;
+}
+
+.filter-actions {
+  display: flex;
+  gap: var(--space-1);
+}
+
+/* ===== Lưới học phần ===== */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-2);
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.course-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.course-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-1);
+}
+
+.course-name {
+  font-size: var(--font-size-lg);
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.course-card-foot {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+/* ===== Phân trang ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-1);
+  margin-top: var(--space-3);
+}
+
+.page-btn {
+  min-width: 36px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.page-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.page-btn.active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* ===== Modal chi tiết ===== */
+.course-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+}
+
+.course-detail dt {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.course-detail dd {
+  font-weight: 600;
+}
+
+/* ===== Chân trang ===== */
+.page-footer {
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* ===== Skeleton trạng thái đang tải ===== */
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.skeleton-title {
+  height: 20px;
+  width: 70%;
+}
+
+.skeleton-line {
+  height: 14px;
+  width: 90%;
+}
+
+.skeleton-chip {
+  height: 28px;
+  width: 40%;
+}
