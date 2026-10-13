@@ -38,4 +38,4 @@ https://www.figma.com/design/BaIlOa6PACas0eaH4sfcHA/Danh-m%E1%BB%A5c-h%E1%BB%8Dc
 
 ## Link GitHub
 
-> TODO: *(dán link GitHub repo cá nhân sau khi tạo và push)*
+https://github.com/trunganhh2530-crypto/cse122-gk-course-catalog
