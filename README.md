@@ -16,16 +16,20 @@ Cho phép người dùng (khách chưa đăng nhập) **tra cứu chương trìn
 
 ## Các chức năng chính
 
-- [ ] Hiển thị danh sách học phần (render từ mảng dữ liệu JavaScript).
-- [ ] Tìm kiếm học phần theo tên/mã (nhập tức thì, không cần tải lại trang).
-- [ ] Lọc học phần theo học kỳ / nhóm kiến thức.
-- [ ] Responsive: hiển thị tốt trên Desktop và Mobile.
+- [x] Hiển thị danh mục **128 học phần thuộc 6 chương trình đào tạo** (dữ liệu sinh từ mảng JavaScript, có mã học phần, số tín chỉ, tiên quyết, khoa quản lý, trạng thái).
+- [x] Tìm kiếm học phần theo tên/mã (nhập tức thì, không cần tải lại trang).
+- [x] Lọc theo chương trình / số tín chỉ / chỉ hiển thị học phần đang mở (checkbox).
+- [x] Sắp xếp theo mã học phần, tên học phần (A–Z) hoặc số tín chỉ.
+- [x] Phân trang 6 học phần mỗi trang (‹ 1 2 3 … N ›).
+- [x] Trạng thái đang tải (skeleton) và trạng thái rỗng kèm nút "Đặt lại bộ lọc".
+- [x] Modal xem chi tiết học phần (mở/đóng bằng nút, bấm nền hoặc phím Esc).
+- [x] Responsive: lưới 3 cột → 2 cột (tablet) → 1 cột (mobile), thanh điều hướng tự xuống dòng.
 
 ## Công nghệ sử dụng
 
-- **HTML5** – semantic HTML (`header`, `nav`, `main`, `section`, `article`, `footer`).
-- **CSS3** – Flexbox, CSS Grid, hover, media query (responsive).
-- **JavaScript (vanilla)** – DOM, `querySelector`, event `input`/`click`, render dữ liệu từ mảng, `let/const`, function, loop, `if/else`.
+- **HTML5** – semantic HTML (`header`, `nav`, `main`, `section`, `article`, `footer`, `form`, `label`, `input`, `select`, `checkbox`, `button`).
+- **CSS3** – biến CSS (design token dùng chung `base.css` của nhóm StudyPath AI), Flexbox, CSS Grid, hover, media query (responsive).
+- **JavaScript (vanilla)** – DOM, `getElementById`, `closest`, event `input`/`change`/`submit`/`click`, render dữ liệu bằng `innerHTML`/`textContent`, `classList`, sắp xếp bằng `localeCompare`, `let`/`const`, function, array method, loop, `if/else`.
 - Không dùng framework, không backend (theo phạm vi đề bài).
 
 ## Link Figma
