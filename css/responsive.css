@@ -1,1 +1,82 @@
-/* StudyPath AI — responsive (WP3 sẽ bổ sung) */
+/* =========================================================
+   StudyPath AI — responsive riêng trang Course Catalog (bổ sung cho base.css)
+   base.css đã xử lý tiện ích chung; file này tinh chỉnh riêng cho trang này.
+   ========================================================= */
+
+/* Tablet: lưới còn 2 cột, bộ lọc xếp thành 2 cột */
+@media (max-width: 1024px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .checkbox-group {
+    padding-bottom: 0;
+  }
+
+  .filter-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+  }
+}
+
+/* Mobile: mọi lưới xếp thành 1 cột, không vỡ layout */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: var(--space-1) var(--space-2);
+    row-gap: var(--space-1);
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sort-group {
+    justify-content: flex-end;
+  }
+
+  .page-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Màn hình nhỏ: modal chi tiết và phân trang gọn */
+@media (max-width: 640px) {
+  .course-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+
+  .page-footer {
+    justify-content: center;
+  }
+}
